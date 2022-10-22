@@ -12,7 +12,7 @@
 #define VAR1 0x10
 const int VAR2 = 0x20;
 int Var3 = 0x30;
-
+// int A ;
 /* Private function prototypes -----------------------------------------------*/
 
 /* Private functions ---------------------------------------------------------*/
@@ -23,6 +23,7 @@ int Var3 = 0x30;
   */
 int main(void)
 {
+  int YX = 0;
   
   static int i = 6;
   
@@ -50,6 +51,7 @@ int main(void)
   p1 = (int *)malloc(4 * sizeof(int));
   *p1 = var7 + var8 + var13 ;
   free(p1);
+
   
   p2 = (int *)malloc(8 * sizeof(int));
   *p2 = var9 + var10 + var14; 
